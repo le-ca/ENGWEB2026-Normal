@@ -1,6 +1,6 @@
 [
   {
-    "id": "catan",
+    "_id": "catan",
     "name": "Catan",
     "year": 1995,
     "category": "Family",
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": "ticket-to-ride",
+    "_id": "ticket-to-ride",
     "name": "Ticket to Ride",
     "year": 2004,
     "category": "Family",
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "id": "scythe",
+    "_id": "scythe",
     "name": "Scythe",
     "year": 2016,
     "category": "Strategy",
@@ -136,7 +136,7 @@
     ]
   },
   {
-    "id": "terraforming-mars",
+    "_id": "terraforming-mars",
     "name": "Terraforming Mars",
     "year": 2016,
     "category": "Strategy",
@@ -188,7 +188,7 @@
     ]
   },
   {
-    "id": "azul",
+    "_id": "azul",
     "name": "Azul",
     "year": 2017,
     "category": "Family",
@@ -228,7 +228,7 @@
     ]
   },
   {
-    "id": "gloomhaven",
+    "_id": "gloomhaven",
     "name": "Gloomhaven",
     "year": 2017,
     "category": "Strategy",
@@ -276,7 +276,7 @@
     ]
   },
   {
-    "id": "carcassonne",
+    "_id": "carcassonne",
     "name": "Carcassonne",
     "year": 2000,
     "category": "Family",
@@ -316,7 +316,7 @@
     ]
   },
   {
-    "id": "pandemic",
+    "_id": "pandemic",
     "name": "Pandemic",
     "year": 2008,
     "category": "Family",
@@ -360,7 +360,7 @@
     ]
   },
   {
-    "id": "wingspan",
+    "_id": "wingspan",
     "name": "Wingspan",
     "year": 2019,
     "category": "Strategy",
@@ -400,7 +400,7 @@
     ]
   },
   {
-    "id": "codenames",
+    "_id": "codenames",
     "name": "Codenames",
     "year": 2015,
     "category": "Party",
@@ -436,7 +436,7 @@
     ]
   },
   {
-    "id": "7-wonders",
+    "_id": "7-wonders",
     "name": "7 Wonders",
     "year": 2010,
     "category": "Strategy",
@@ -472,7 +472,7 @@
     ]
   },
   {
-    "id": "splendor",
+    "_id": "splendor",
     "name": "Splendor",
     "year": 2014,
     "category": "Family",
@@ -502,7 +502,7 @@
     "premios": []
   },
   {
-    "id": "root",
+    "_id": "root",
     "name": "Root",
     "year": 2018,
     "category": "Strategy",
@@ -542,7 +542,7 @@
     ]
   },
   {
-    "id": "everdell",
+    "_id": "everdell",
     "name": "Everdell",
     "year": 2018,
     "category": "Strategy",
@@ -572,7 +572,7 @@
     "premios": []
   },
   {
-    "id": "brass-birmingham",
+    "_id": "brass-birmingham",
     "name": "Brass: Birmingham",
     "year": 2018,
     "category": "Strategy",
@@ -602,7 +602,7 @@
     "premios": []
   },
   {
-    "id": "castles-of-burgundy",
+    "_id": "castles-of-burgundy",
     "name": "The Castles of Burgundy",
     "year": 2011,
     "category": "Strategy",
@@ -636,7 +636,7 @@
     "premios": []
   },
   {
-    "id": "cascadia",
+    "_id": "cascadia",
     "name": "Cascadia",
     "year": 2021,
     "category": "Family",
@@ -672,7 +672,7 @@
     ]
   },
   {
-    "id": "blood-rage",
+    "_id": "blood-rage",
     "name": "Blood Rage",
     "year": 2015,
     "category": "Strategy",
@@ -710,7 +710,7 @@
     "premios": []
   },
   {
-    "id": "ark-nova",
+    "_id": "ark-nova",
     "name": "Ark Nova",
     "year": 2021,
     "category": "Strategy",
@@ -746,7 +746,7 @@
     ]
   },
   {
-    "id": "spirit-island",
+    "_id": "spirit-island",
     "name": "Spirit Island",
     "year": 2017,
     "category": "Strategy",
@@ -780,7 +780,7 @@
     "premios": []
   },
   {
-    "id": "dune-imperium",
+    "_id": "dune-imperium",
     "name": "Dune: Imperium",
     "year": 2020,
     "category": "Strategy",
@@ -814,7 +814,7 @@
     "premios": []
   },
   {
-    "id": "lost-ruins-of-arnak",
+    "_id": "lost-ruins-of-arnak",
     "name": "Lost Ruins of Arnak",
     "year": 2020,
     "category": "Strategy",
@@ -848,7 +848,7 @@
     "premios": []
   },
   {
-    "id": "dominion",
+    "_id": "dominion",
     "name": "Dominion",
     "year": 2008,
     "category": "Strategy",
@@ -884,7 +884,7 @@
     ]
   },
   {
-    "id": "twilight-imperium-4",
+    "_id": "twilight-imperium-4",
     "name": "Twilight Imperium: Fourth Edition",
     "year": 2017,
     "category": "Strategy",
@@ -918,7 +918,7 @@
     "premios": []
   },
   {
-    "id": "patchwork",
+    "_id": "patchwork",
     "name": "Patchwork",
     "year": 2014,
     "category": "Family",
@@ -948,7 +948,7 @@
     "premios": []
   },
   {
-    "id": "king-of-tokyo",
+    "_id": "king-of-tokyo",
     "name": "King of Tokyo",
     "year": 2011,
     "category": "Party",
@@ -982,7 +982,7 @@
     "premios": []
   },
   {
-    "id": "puerto-rico",
+    "_id": "puerto-rico",
     "name": "Puerto Rico",
     "year": 2002,
     "category": "Strategy",

@@ -7,7 +7,7 @@ async function importarDados() {
     await mongoose.connect('mongodb://127.0.0.1:27017/jogostabuleiro');
     console.log('Ligado ao MongoDB com sucesso!');
 
-    const jogoSchema = new mongoose.Schema({}, { strict: false });
+    const jogoSchema = new mongoose.Schema({ _id: String }, { strict: false });
     const Jogo = mongoose.model('Jogo', jogoSchema, 'jogos');
 
     const dados = JSON.parse(fs.readFileSync('./jogos.json', 'utf-8'));

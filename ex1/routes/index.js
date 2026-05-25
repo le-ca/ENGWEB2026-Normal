@@ -22,7 +22,8 @@ router.get('/autores', async (req, res) => {
     try {
         const autores = await Jogo.aggregate([
             { $unwind: "$autores" },
-            { $group: { _id: "$autores.name", jogos: { $push: { id: "$id", nome: "$name" } } } },
+            // Alterado de "$id" para "$_id" no push:
+            { $group: { _id: "$autores.name", jogos: { $push: { id: "$_id", nome: "$name" } } } },
             { $sort: { _id: 1 } },
             { $project: { _id: 0, autor: "$_id", jogos: 1 } }
         ]);
@@ -36,7 +37,8 @@ router.get('/autores', async (req, res) => {
 router.get('/categorias', async (req, res) => {
     try {
         const categorias = await Jogo.aggregate([
-            { $group: { _id: "$category", jogos: { $push: { id: "$id", nome: "$name" } } } },
+            // Alterado de "$id" para "$_id" no push:
+            { $group: { _id: "$category", jogos: { $push: { id: "$_id", nome: "$name" } } } },
             { $sort: { _id: 1 } },
             { $project: { _id: 0, categoria: "$_id", jogos: 1 } }
         ]);
@@ -49,7 +51,7 @@ router.get('/categorias', async (req, res) => {
 // GET /jogos/:id
 router.get('/jogos/:id', async (req, res) => {
     try {
-        const jogo = await Jogo.findOne({ id: req.params.id });
+        const jogo = await Jogo.findById(req.params.id);
         if (!jogo) return res.status(404).json({ erro: "Jogo não encontrado" });
         res.json(jogo);
     } catch (err) {
@@ -70,7 +72,9 @@ router.post('/jogos', async (req, res) => {
 // PUT /jogos/:id
 router.put('/jogos/:id', async (req, res) => {
     try {
-        const jogo = await Jogo.findOneAndUpdate({ id: req.params.id }, req.body, { new: true });
+        const jogo = await Jogo.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        
+        if (!jogo) return res.status(404).json({ erro: "Jogo não encontrado para atualizar" });
         res.json(jogo);
     } catch (err) {
         res.status(500).json({ erro: err.message });
@@ -80,7 +84,9 @@ router.put('/jogos/:id', async (req, res) => {
 // DELETE /jogos/:id
 router.delete('/jogos/:id', async (req, res) => {
     try {
-        await Jogo.findOneAndDelete({ id: req.params.id });
+        const jogo = await Jogo.findByIdAndDelete(req.params.id);
+        
+        if (!jogo) return res.status(404).json({ erro: "Jogo não encontrado para eliminar" });
         res.json({ mensagem: "Jogo eliminado com sucesso" });
     } catch (err) {
         res.status(500).json({ erro: err.message });

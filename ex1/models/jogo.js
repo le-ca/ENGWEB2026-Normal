@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const jogoSchema = new mongoose.Schema({
-    id: String,
+    _id: String,
     name: String,
     year: Number,
     category: String,
