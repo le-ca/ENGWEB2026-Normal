@@ -1,0 +1,30 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Jogos de Tabuleiro",
+    "version": "1.0.0",
+    "description": "API desenvolvida para o exame de EngWeb2026."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:17000"
+    }
+  ],
+  "paths": {
+    "/jogos": {
+      "get": { "summary": "Obtém todos os jogos ou filtra por editora" },
+      "post": { "summary": "Adiciona um novo jogo" }
+    },
+    "/jogos/{id}": {
+      "get": { "summary": "Obtém um jogo pelo ID" },
+      "put": { "summary": "Atualiza um jogo pelo ID" },
+      "delete": { "summary": "Elimina um jogo pelo ID" }
+    },
+    "/autores": {
+      "get": { "summary": "Obtém a lista de autores" }
+    },
+    "/categorias": {
+      "get": { "summary": "Obtém a lista de categorias" }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+services:
+  mongodb_ex2:
+    image: mongo
+    container_name: mongodb_ex2
+    volumes:
+      - mongo_data_ex2:/data/db
+
+  api_ex2:
+    build: ./api
+    container_name: api_ex2
+    ports:
+      - "19020:19020"
+    depends_on:
+      - mongodb_ex2
+
+  nginx_ex2:
+    image: nginx:alpine
+    container_name: nginx_ex2
+    ports:
+      - "19021:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+volumes:
+  mongo_data_ex2:

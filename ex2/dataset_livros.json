@@ -1,0 +1,8 @@
+[
+  { "titulo": "Os Maias", "autor": "Eça de Queirós", "paginas": 714, "genero": "Romance", "lido": true },
+  { "titulo": "A Mensagem", "autor": "Fernando Pessoa", "paginas": 110, "genero": "Poesia", "lido": false },
+  { "titulo": "Ensaio sobre a Cegueira", "autor": "José Saramago", "paginas": 312, "genero": "Ficção", "lido": true },
+  { "titulo": "Os Lusíadas", "autor": "Luís de Camões", "paginas": 400, "genero": "Epopeia", "lido": false },
+  { "titulo": "O Crime do Padre Amaro", "autor": "Eça de Queirós", "paginas": 624, "genero": "Romance", "lido": true },
+  { "titulo": "Memorial do Convento", "autor": "José Saramago", "paginas": 400, "genero": "Romance", "lido": false }
+]
